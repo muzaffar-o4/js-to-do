@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.home_text {
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    margin: 40px 0px;
+}
+
+.form__input {
+    width: 65%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.407)
+}
+
+
+
+.task {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    gap: 10px;
+    border: 1px solid rgb(49, 49, 119);
+    align-items: center;
+}
+
+.task__text {
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.task_edit {
+    color: blue;
+}
+
+.task_delete {
+    color: red;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+    color: #000;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.modal-content {
+    margin: 10% auto;
+    width: 35%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.modal-header {
+    background: rgba(255, 0, 0, 0.531);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 20px;
+    background: #fff;
+}
+
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
